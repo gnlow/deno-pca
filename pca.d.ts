@@ -1,4 +1,4 @@
-import { Matrix } from 'ml-matrix';
+import { Matrix } from './matrix.d.ts';
 
 declare module 'ml-pca' {
   export interface IPCAOptions {
