@@ -1,6 +1,6 @@
 import { Matrix } from './matrix.d.ts';
 
-declare module 'ml-pca' {
+declare module './pca.js' {
   export interface IPCAOptions {
     isCovarianceMatrix?: boolean;
     method?: 'SVD' | 'NIPALS' | 'covarianceMatrix';
