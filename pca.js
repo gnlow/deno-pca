@@ -1,5 +1,3 @@
-/// <reference path="./pca.d.ts"/>
-
 const toString = Object.prototype.toString;
 
 function isAnyArray(object) {
