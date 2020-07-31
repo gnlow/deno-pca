@@ -1,1 +1,1 @@
-export * from "./pca.js"
+export {PCA} from "./pca.js"

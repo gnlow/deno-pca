@@ -1,6 +1,6 @@
 import { Matrix } from './matrix.d.ts';
 
-declare module './pca.js' {
+declare module 'https://raw.githubusercontent.com/gnlow/deno-pca/master/pca.js' {
   export interface IPCAOptions {
     isCovarianceMatrix?: boolean;
     method?: 'SVD' | 'NIPALS' | 'covarianceMatrix';
