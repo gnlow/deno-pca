@@ -1,21 +1,14 @@
-# ml-pca
+# deno-pca
 
-[![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![David deps][david-image]][david-url]
-[![npm download][download-image]][download-url]
+Principal component analysis (PCA).  
+Fork of [mljs/pca](https://github.com/mljs/pca).
 
-Principal component analysis (PCA).
+## Usage (Deno)
 
-## Installation
-
-`$ npm install ml-pca`
-
-## Usage
-
-```js
-const { PCA } = require('ml-pca');
-const dataset = require('ml-dataset-iris').getNumbers();
+```ts
+import { PCA } from "https://raw.githubusercontent.com/gnlow/deno-pca/master/mod.ts";
+import { getNumbers } from "https://raw.githubusercontent.com/gnlow/deno-dataset-iris/master/mod.ts";
+const dataset = getNumbers();
 // dataset is a two-dimensional array where rows represent the samples and columns the features
 const pca = new PCA(dataset);
 console.log(pca.getExplainedVariance());
