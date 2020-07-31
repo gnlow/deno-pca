@@ -4307,7 +4307,7 @@ class nipals {
  * @param {boolean} [options.scale=false] - should the data be scaled (divide by the standard deviation).
  * @param {boolean} [options.ignoreZeroVariance=false] - ignore columns with zero variance if `scale` is `true`.
  * */
-class PCA {
+export class PCA {
   constructor(dataset, options = {}) {
     if (dataset === true) {
       const model = options;
@@ -4566,5 +4566,3 @@ class PCA {
     this.U = this.U.transpose(); // to be compatible with API
   }
 }
-
-export { PCA };
